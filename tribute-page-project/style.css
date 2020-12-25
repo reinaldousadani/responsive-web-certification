@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arimo', sans-serif;
+}
+
+#main {
+  padding: 15px;
+  margin: 15px;
+  background-color: #eeeeee;
+}
+
+#main #title {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#main p {
+  text-align: center;
+  margin: 16px;
+}
+
+#main #img-div {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+#main #img-div img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+#main #img-div #img-caption {
+  text-align: center;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+#main #tribute-info #headline {
+  margin: 50px 0;
+  text-align: center;
+}
+
+#main #tribute-info ul {
+  margin: auto;
+  max-width: 550px;
+  padding-left: 40px;
+}
+
+#main #tribute-info ul li {
+  margin: 20px 0;
+}
+
+#main #tribute-info p {
+  max-width: 550px;
+  margin: auto;
+}
+
+#main #tribute-info h3 {
+  text-align: center;
+  margin: 50px 0;
+}
+/*# sourceMappingURL=style.css.map */
