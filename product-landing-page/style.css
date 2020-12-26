@@ -16,9 +16,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: -webkit-sticky;
-  position: sticky;
-  width: 100vw;
+  position: fixed;
+  width: 100%;
   padding: 10px 20px;
   background-color: lightblue;
 }
@@ -35,6 +34,7 @@
   display: flex;
   list-style-type: none;
   gap: 20px;
+  margin: 0 20px;
 }
 
 #header .nav-link {
@@ -47,7 +47,7 @@
 }
 
 #hero #form {
-  padding: 20px;
+  padding: 100px 20px 20px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,5 +68,120 @@
 
 #hero #submit {
   padding: 5px;
+}
+
+#features .container .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+}
+
+#features .container .grid .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: orange;
+  padding: 20px 0;
+}
+
+#features .container .grid .desc {
+  padding: 20px 0;
+}
+
+#features .container .grid .desc h1 {
+  margin: 10px 0;
+}
+
+#features .container #how-it-works {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+#features .container #how-it-works #video {
+  width: 100%;
+  max-width: 560px;
+  margin: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+}
+
+#pricing {
+  margin-bottom: 50px;
+}
+
+#pricing .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+#pricing .container .card {
+  border: 2px orange solid;
+  width: 250px;
+  text-align: center;
+}
+
+#pricing .container .card .product-name {
+  padding: 20px;
+  background-color: lightblue;
+}
+
+#pricing .container .card .product-price {
+  padding: 20px;
+}
+
+#pricing .container .card .product-desc {
+  padding: 0 20px;
+}
+
+#pricing .container .card .product-buy {
+  margin: 20px 0;
+  padding: 10px;
+  width: 100px;
+}
+
+@media (max-width: 550px) {
+  #header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #header ul {
+    margin-top: 20px;
+  }
+  #features .container .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
